@@ -23,16 +23,16 @@
         <header class="header-nav">
             <nav>
                 <ul>
-                    <li>Benefits</li>
-                    <li>About</li>
-                    <li>Apartments</li>
+                    <li id="benefits">Benefits</li>
+                    <li id="about">About</li>
+                    <li id="apartments">Apartments</li>
                 </ul>
             </nav>
         </header>
         <div class="sideline-right">
 
         </div>
-        <section class="main-section">
+        <section class="main-section bg1">
 
             <div class="white-line">
                 <div class="main-text">
@@ -118,21 +118,21 @@
 
         <section class="apartment-section">
             <div class="apartment-buttons">
-                <div class="btn-small">
+                <div class="btn-small btn btn-checked">
                     1 - 2 person
                 </div>
-                <div class="btn-large">
+                <div class="btn-large btn">
                     3 - 6 person
                 </div>
             </div>
 
             <div class="apartment-container">
-                <img src="images/sunny.jpg" alt="" class="apartment-photo">
+                <img src="images/sunny.jpg" alt="" class="apartment-photo apart1">
                 <div class="apartment-text">
-                    <p>
-                        Sunny apartment #2
+                    <p class="first-top">
+                        Sunny apartment #2 
                     </p>
-                    <p>
+                    <p class="first-about">
                         Proin rhoncus scelerisque quam, vel commodo orci eleifend id. Morbi molestie ut tellus non
                         posuere. Sed interdum sollicitudin risus. Quisque non tortor eleifend, sollicitudin tortor quis,
                         efficitur mi. Suspendisse vehicula sodales lobortis. Curabitur lobortis tincidunt tortor,
@@ -143,32 +143,32 @@
             <div class="apartment-container">
 
                 <div class="apartment-text">
-                    <p>
-                        Sunny apartment #2
+                    <p class="second-top">
+                        Sea apartment #2
                     </p>
-                    <p>
+                    <p class="second-about">
                         Proin rhoncus scelerisque quam, vel commodo orci eleifend id. Morbi molestie ut tellus non
                         posuere. Sed interdum sollicitudin risus. Quisque non tortor eleifend, sollicitudin tortor quis,
                         efficitur mi. Suspendisse vehicula sodales lobortis. Curabitur lobortis tincidunt tortor,
                     </p>
 
                 </div>
-                <img src="images/sunny2.jpg" alt="" class="apartment-photo">
+                <img src="images/sunny2.jpg" alt="" class="apartment-photo apart2">
             </div>
 
         </section>
 
         <section class="photo-gallery">
             <div class="left-photo">
-                <img src="./images/modern2.jpg" alt="">
+                <img src="./images/modern1.jpg" class="back1" alt="">
             </div>
 
             <div class="main-photo">
-                <img src="./images/modern.jpg" alt="">
+                <img src="./images/modern.jpg" class="front" alt="">
             </div>
 
             <div class="right-photo">
-                <img src="./images/modern2.jpg" alt="">
+                <img src="./images/modern2.jpg" class="back2" alt="">
             </div>
         </section>
 
@@ -177,25 +177,29 @@
         </div>
 
         <section class="form">
-            <form action="">
+            <form action="/" onsubmit="return formValidation()">
                 <label for="email">email:</label>
-                <input type="email" name="email" id="email">
-
+                <input type="text" name="email" id="email">
+                
                 <label for="name">name:</label>
                 <input type="text" name="name" id="name">
 
-                <label for="apartment">Choose your apartment</label>
+                <label for="apartment">choose your apartment</label>
                 <select name="apartment" id="apartment">
-                    <option value="Sunny1">Sunny #1</option>
-                    <option value="Sunny2">Sunny #2</option>
-                    <option value="Sunny3">Sunny #3</option>
-                    <option value="Sea1">Sea #1</option>
-                    <option value="Sea2">Sea #2</option>
-                    <option value="Sea3">Sunny #3</option>
+                    <option value="Sunny1">Sunny#2</option>
+                    <option value="Sunny2">Sea#2</option>
+                    <option value="Sunny3">Family#1</option>
+                    <option value="Sea1">Big house#1</option>
+                   
 
                 </select>
 
-                <button type="submit">Book</button>
+                <label for="date-start">from</label>
+                <input type="date" name="date-start" id="date-start">
+                <label for="date-end">to</label>
+                <input type="date" name="date-end" id="date-end">
+                <p class="error"></p>
+                <button type="submit" id="submit">Book</button>
 
             </form>
         </section>
@@ -205,6 +209,11 @@
                 about us
             </div>
             <div class="opinion-container">
+                <div class="opinion-list">
+                    <img src="./images/opinion1.png" width="174" height="174" alt="">
+                    <i>"Etiam velit eros, vehicula vel tempus quis, ullamcorper quis ligula. Proin vel quam sapien.
+                        Nulla in velit blandit, ornare lectus."</i>
+                </div>
                 <div class="rewards-list">
                     <ul>
                         <li>Canary Trophy - winner 2010, 2012, 2019, 2020</li>
@@ -213,10 +222,7 @@
                         <li>Canary Trophy - winner 2010, 2012, 2019, 2020</li>
                     </ul>
                 </div>
-                <div class="opinion-list">
-                    <i>"Etiam velit eros, vehicula vel tempus quis, ullamcorper quis ligula. Proin vel quam sapien.
-                        Nulla in velit blandit, ornare lectus."</i>
-                </div>
+               
             </div>
         </section>
 
@@ -241,7 +247,7 @@
 
 
 
-
+<script src="script.js"></script>
 
 </body>
 
