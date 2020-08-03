@@ -174,13 +174,13 @@ body {
 }
 
 .bg1 {
-  background: url("/images/canary.jpg");
+  background-image: url("images/canary.jpg");
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
 .bg2 {
-  background: url("/images/canary2.jpg");
+  background-image: url("images/canary2.jpg");
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -598,6 +598,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .rewards .opinion-container .rewards-list ul li {
