@@ -1,1 +1,1 @@
-http://hosting1907205.online.pro/bartoszstudio3/
+http://serwer2030284.home.pl/skyview/
